@@ -13,9 +13,9 @@ Le joueur peut également recevoir des dégâts et en infliger aux ennemis lors 
 
 Outils :
 
--Unity\n
--Aseprite(Pixel Art)\n
--Visual Studio(C#)\n
+- Unity
+- Aseprite(Pixel Art)
+- Visual Studio(C#)
 
 
 Sources :
