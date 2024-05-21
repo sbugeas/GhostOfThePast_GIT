@@ -11,17 +11,11 @@ Dans l'état actuelle des choses, le personnage peut se déplacer(Sur le côté 
 ramasser des potions de vie, traverser un portail menant au premier donjon(dans lequels on retrouve les premiers ennemis complet(blop) qui dispose de tout les scripts et animations nécessaires. 
 Le joueur peut également recevoir des dégâts et en infliger aux ennemis lors d'attaque. Le joueur a également une animation de course, d'attente et d'attaque(selon le type de l'arme).
 
-
 Outils :
 
--Unity
-
--Aseprite(Pixel Art)
-
--Visual Studio(C#)
-
-
-
+-Unity\n
+-Aseprite(Pixel Art)\n
+-Visual Studio(C#)\n
 
 
 Sources :
