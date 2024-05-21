@@ -1,8 +1,10 @@
 Description :
 
 Projet 2D Rogue-like. Univers fantastique-médiéval. La narration n'est pas encore clairement définie mais elle sera présente, donnant au joueur du sens à ses actions. 
+
 Pour aller au plus simple, le joueur devra réaliser différents donjons pour sauver le monde d'un mal inconnu qui se répend. 
 Il y aura aussi possiblement des mécaniques amenant le joueur à prendre des décisions qui auront des conséquences. 
+
 Comme dit dans les autres sections, je consacre actuellement tout mon temps au projet RTS, celui-ci est donc actuellement en stand-bye.
 
 
