@@ -37,7 +37,9 @@ Clique gauche(arme équipée) : Attaque
 --- OUTILS ---
 
 Unity
+
 Visual studio (C#)
+
 Aseprite
 
 --- SOURCES ---
