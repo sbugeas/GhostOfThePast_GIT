@@ -17,7 +17,6 @@ public class PlayerStats : MonoBehaviour
 
     Color baseColor;
 
-    // Start is called before the first frame update
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -41,7 +40,6 @@ public class PlayerStats : MonoBehaviour
 
         foreach(GameObject enemy in StageManagement.instance.currentEnemyList) 
         {
-            //ATTENTION LORSQUE ENNEMI RANGE AJOUTE
             Physics2D.IgnoreCollision(enemy.GetComponent<Collider2D>(), GetComponent<Collider2D>(), true);
             enemy.GetComponent<EnemyMeleAttackGen>().isAttacking = false;
         }
@@ -61,7 +59,6 @@ public class PlayerStats : MonoBehaviour
 
         foreach (GameObject enemy in StageManagement.instance.currentEnemyList)
         {
-            //ATTENTION LORSQUE ENNEMI RANGE AJOUTE
             Physics2D.IgnoreCollision(enemy.GetComponent<Collider2D>(), GetComponent<Collider2D>(), false);
             enemy.GetComponent<EnemyMeleAttackGen>().isAttacking = true;
         }
@@ -79,6 +76,7 @@ public class PlayerStats : MonoBehaviour
 
         while (isInvincible == true) 
         {
+            //Rend le joueur invisible
             spriteRenderer.color = new Color(0, 0, 0, 0);
             armSprite.color = new Color(0, 0, 0, 0);
 
@@ -89,6 +87,7 @@ public class PlayerStats : MonoBehaviour
 
             yield return new WaitForSeconds(0.2f);
 
+            //Joueur redevient visible
             spriteRenderer.color = baseColor;
             armSprite.color = baseColor;
             

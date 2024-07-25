@@ -11,6 +11,9 @@ TagManager:
   - Door
   - Stages
   - DungeonDoor
+  - GameManager
+  - Canvas
+  - EventSystem
   layers:
   - Default
   - TransparentFX

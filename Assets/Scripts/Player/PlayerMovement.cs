@@ -10,7 +10,6 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody2D rb;
     SpriteRenderer spriteRenderer;
     Vector2 dir;
-    Vector3 refScale;
 
     public GameObject playerArm;
 
@@ -23,7 +22,6 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
-        refScale = transform.localScale;
         current_Weapon = GetComponent<PlayerEquipment>().currentWeapon;
     }
 

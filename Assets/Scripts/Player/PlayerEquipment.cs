@@ -39,7 +39,7 @@ public class PlayerEquipment : MonoBehaviour
         }
         else haveWeapon = true;
 
-        //ATTAQUE
+        //Attaque
         if (Input.GetMouseButton(0) && canAttack && haveWeapon)  
         {
             isAttacking = true;
@@ -47,6 +47,7 @@ public class PlayerEquipment : MonoBehaviour
 
             if (currentWeaponScript.rangeWeapon == true) 
             {
+                // Attaque range
                 PlayerShoot();
             }
             else // Attaque mélée
@@ -139,12 +140,15 @@ public class PlayerEquipment : MonoBehaviour
         GameObject projectile = Instantiate(currentWeaponScript.projectile, projectilePos, Quaternion.identity) as GameObject;
 
         projectile.GetComponent<SpriteRenderer>().enabled = false;
-        projectile.GetComponent<ProjectileManager>().target = mousePos;
-        projectile.GetComponent<ProjectileManager>().powerShoot = currentWeaponScript.projSpeed;
-        projectile.GetComponent<ProjectileManager>().projRange = currentWeaponScript.range;
-        projectile.GetComponent<ProjectileManager>().ArmPivotPos = new Vector2(armPivot.transform.position.x, armPivot.transform.position.y);
-        projectile.GetComponent<ProjectileManager>().weaponOfThisProjectile = currentWeapon;
-        projectile.GetComponent<ProjectileManager>().isShooted = true;
+
+        ProjectileManager projManager = projectile.GetComponent<ProjectileManager>();
+
+        projManager.target = mousePos;
+        projManager.powerShoot = currentWeaponScript.projSpeed;
+        projManager.projRange = currentWeaponScript.range;
+        projManager.ArmPivotPos = new Vector2(armPivot.transform.position.x, armPivot.transform.position.y);
+        projManager.weaponOfThisProjectile = currentWeapon;
+        projManager.isShooted = true;
 
     }
 
@@ -173,6 +177,7 @@ public class PlayerEquipment : MonoBehaviour
             else indexOfChild--;
         }
 
+        //On sélectionne l'arme selon index (parmi les enfants de weaponPosition)
         currentWeapon = weaponPosition.gameObject.transform.GetChild(indexOfChild).gameObject; 
         armPivot.GetComponent<ArmRotation>().curr_weapon = currentWeapon;
 

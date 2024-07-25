@@ -43,7 +43,8 @@ public class StageManagement : MonoBehaviour
         if (instance != null)
         {
             Debug.LogWarning("Attention : Il y a plus d'une instance de StageManagement dans la scène !");
-            return;
+            Destroy(this.gameObject);
+            //return;
         }
 
         instance = this;
@@ -93,7 +94,6 @@ public class StageManagement : MonoBehaviour
     {
         stages = GameObject.FindGameObjectWithTag("Stages");
 
-        //penser à récupérer stages
         stage_index = 0;
         maxStage = stages.transform.childCount;
         current_stage = stages.transform.GetChild(stage_index).gameObject;

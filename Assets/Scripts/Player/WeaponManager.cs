@@ -26,7 +26,6 @@ public class WeaponManager : MonoBehaviour
     public Animator weaponAnim;
     
 
-    // Update is called once per frame
     void Update()
     {
         if (playerCarriesThisWeapon && (transform.localEulerAngles.z != 0)) 
@@ -90,9 +89,9 @@ public class WeaponManager : MonoBehaviour
 
     }
 
-    private void OnTriggerEnter2D(Collider2D col)  //OK
+    private void OnTriggerEnter2D(Collider2D col)
     {
-        if (!playerCarriesThisWeapon) 
+        if (!playerCarriesThisWeapon)
         {
             if (col.gameObject.tag == "Player")
             {
@@ -103,9 +102,9 @@ public class WeaponManager : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit2D(Collider2D col) //OK
+    private void OnTriggerExit2D(Collider2D col)
     {
-        if (!playerCarriesThisWeapon) 
+        if (!playerCarriesThisWeapon)
         {
             if (col.gameObject.tag == "Player")
             {

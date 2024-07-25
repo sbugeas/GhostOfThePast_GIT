@@ -41,13 +41,12 @@ public class ProjectileManager : MonoBehaviour
     {      
         Vector2 pos = new Vector2(transform.position.x, transform.position.y);
 
-        //rb.velocity = Vector2.right * powerShoot * Time.deltaTime;
         if (isShooted) 
         {
-            dir = target - ArmPivotPos; //
+            dir = target - ArmPivotPos;
             dir.Normalize();
 
-            final_target = pos + (dir * projRange); //
+            final_target = pos + (dir * projRange);
 
             float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
             Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
@@ -101,6 +100,6 @@ public class ProjectileManager : MonoBehaviour
         animator.SetBool("IsBroken", true);
         Vector3 force = new Vector3(dir.x, dir.y, 0f) * 100f;
         rb.AddForce(force);
-        Destroy(gameObject, 0.4f); //A ajuster
+        Destroy(gameObject, 0.4f);
     }
 }

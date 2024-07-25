@@ -121,7 +121,7 @@ public class ArmRotation : MonoBehaviour
                 {
                     zTargetAngle = transform.eulerAngles.z + 180 ;
                 }
-                else if((weaponPosTop == true) && (player.transform.eulerAngles.y == 180)) //OK
+                else if((weaponPosTop == true) && (player.transform.eulerAngles.y == 180))
                 {
                     zTargetAngle = transform.eulerAngles.z + 180;                           
                 }
@@ -129,7 +129,7 @@ public class ArmRotation : MonoBehaviour
                 {
                     zTargetAngle = transform.eulerAngles.z - 180;
                 }
-                else if ((weaponPosBot  == true) && (player.transform.eulerAngles.y == 180)) //OK
+                else if ((weaponPosBot  == true) && (player.transform.eulerAngles.y == 180))
                 {
                     zTargetAngle = transform.eulerAngles.z - 180;
                 }

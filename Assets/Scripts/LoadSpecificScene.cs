@@ -11,7 +11,7 @@ public class LoadSpecificScene : MonoBehaviour
         if (col.CompareTag("Player")) 
         {
             StageManagement.instance.sceneName = sceneName;
-            SceneManager.LoadScene(sceneName);    
+            SceneManager.LoadScene(sceneName);
         }
     }
 }
