@@ -42,6 +42,8 @@ Clique gauche(arme équipée) : Attaque
 
 --- SOURCES ---
 
-https://www.youtube.com/watch?v=Y3-iYIs16TI&list=PLUWxWDlz8PYKnrd27LTqOxL2lr3KhEVRT
+[Créer un jeu en 2D facilement avec Unity](https://www.youtube.com/watch?v=Y3-iYIs16TI&list=PLUWxWDlz8PYKnrd27LTqOxL2lr3KhEVRT&index=1)
 
-https://www.youtube.com/watch?v=6hp9-mslbzI
+[Unity Tutorial | Rotate Player's Arm to Mouse](https://www.youtube.com/watch?v=6hp9-mslbzI)
+
+[Documentation Unity](https://docs.unity3d.com/Manual/index.html)
